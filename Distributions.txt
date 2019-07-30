@@ -1,0 +1,21 @@
+Multi-variate Bernoulli Naive Bayes The binomial model is useful if your feature vectors are binary (i.e., 0s and 1s). One application would be text classification with a bag of words model where the 0s 1s are "word occurs in the document" and "word does not occur in the document"
+
+Multinomial Naive Bayes The multinomial naive Bayes model is typically used for discrete counts. E.g., if we have a text classification problem, we can take the idea of bernoulli trials one step further and instead of "word occurs in the document" we have "count how often word occurs in the document", you can think of it as "number of times outcome number x_i is observed over the n trials"
+
+In both multi variate as well as multinomial , we find out liklihood and prior. but the difference lies in the process of finding it. in multivariate, during finding liklihood, if the feature vector is 1 , we take the probability of that event but if it is 0 , we take the probability of negation of event.
+
+In multivariate, the length of the feature vector is |v| where |v| is the length of vocabulary.
+In multinomial, we consider only those that occur in document and dont consider 0 , so its length is n where n is the no of tokens in documents.
+
+Multivariate bernauli event: for discrete features, boolean values.
+Multinomial bernauli event: for discrete features, it has multiple discrete values.
+Gaussian : deals with continuous values.
+
+Gaussian Naive Bayes Here, we assume that the features follow a normal distribution. Instead of discrete counts, we have continuous features (e.g., the popular Iris dataset where the features are sepal width, petal width, sepal length, petal length).
+
+Liklihood formula for gaussian naive bayes:
+(1/(underroot(2 pi) * sigma)) * e^((x-u)**2)/(2*sigma*sigma)
+C:\Users\ayush\Documents\ShareX\Screenshots\2019-07( go to this link)
+
+
+
